@@ -21,14 +21,15 @@ function App() {
 
        </BrowserRouter>
 
-       <Switch>
-           <Route exact path="/tabledata" component={Tabledata} />
-            
+     <Switch>
+          <Route path="/tabledata">
+            <Tabledata />
+          </Route>
            <Route path="/">
            <Login />
           </Route>
-         </Switch>
-       </Router>
+        </Switch>
+     </Router>
      
     </div>
   );

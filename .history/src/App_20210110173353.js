@@ -22,8 +22,9 @@ function App() {
        </BrowserRouter>
 
        <Switch>
-           <Route exact path="/tabledata" component={Tabledata} />
-            
+           <Route exact path="/tabledata/">
+            <Tabledata />
+            </Route>
            <Route path="/">
            <Login />
           </Route>

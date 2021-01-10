@@ -5,8 +5,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
-  BrowserRouter
+  Link
 } from "react-router-dom";
 
 import Tabledata from "./login/tabledata";
@@ -14,21 +13,20 @@ import Tabledata from "./login/tabledata";
 function App() {
   return (
     <div className="App">
-     
-     <Router>
 
-       <BrowserRouter>
-
-       </BrowserRouter>
-
-       <Switch>
-           <Route exact path="/tabledata" component={Tabledata} />
-            
-           <Route path="/">
-           <Login />
+     <Switch>
+          <Route path="/tabledata">
+            <Tabledata />
           </Route>
-         </Switch>
-       </Router>
+          {/* <Route path="/users">
+            <Users />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route> */}
+        </Switch>
+
+      <Login />
      
     </div>
   );
